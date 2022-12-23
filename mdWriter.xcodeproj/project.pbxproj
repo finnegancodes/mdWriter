@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6697C3A92954A685004915A4 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 6697C3A82954A685004915A4 /* CodeEditor */; };
+		6697C3AB2954A994004915A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6697C3AA2954A994004915A4 /* SettingsView.swift */; };
+		6698E39D29546B9C00EDF00E /* EditorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698E39C29546B9C00EDF00E /* EditorMode.swift */; };
+		6698E39F29546DA800EDF00E /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698E39E29546DA800EDF00E /* EditorView.swift */; };
+		6698E3A129546DB000EDF00E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698E3A029546DB000EDF00E /* PreviewView.swift */; };
+		6698E3A4295475BE00EDF00E /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6698E3A3295475BE00EDF00E /* MarkdownUI */; };
+		6698E3A629547B7E00EDF00E /* OutlinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698E3A529547B7E00EDF00E /* OutlinerView.swift */; };
+		6698E3A829547BFC00EDF00E /* MdHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698E3A729547BFC00EDF00E /* MdHeading.swift */; };
 		66CF50662953AE2E003C5B1B /* mdWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CF50652953AE2E003C5B1B /* mdWriterApp.swift */; };
-		66CF50682953AE2E003C5B1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CF50672953AE2E003C5B1B /* ContentView.swift */; };
+		66CF50682953AE2E003C5B1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CF50672953AE2E003C5B1B /* MainView.swift */; };
 		66CF506A2953AE2F003C5B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CF50692953AE2F003C5B1B /* Assets.xcassets */; };
 		66CF506E2953AE2F003C5B1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CF506D2953AE2F003C5B1B /* Preview Assets.xcassets */; };
+		66CF50752953B038003C5B1B /* MdFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CF50742953B038003C5B1B /* MdFile.swift */; };
+		66CF507A2953B59F003C5B1B /* FiraCode-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66CF50782953B59F003C5B1B /* FiraCode-Regular.ttf */; };
+		66CF507B2953B59F003C5B1B /* FiraCode-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66CF50792953B59F003C5B1B /* FiraCode-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6697C3AA2954A994004915A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6697C3AE2954CA03004915A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6698E39C29546B9C00EDF00E /* EditorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMode.swift; sourceTree = "<group>"; };
+		6698E39E29546DA800EDF00E /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		6698E3A029546DB000EDF00E /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		6698E3A529547B7E00EDF00E /* OutlinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinerView.swift; sourceTree = "<group>"; };
+		6698E3A729547BFC00EDF00E /* MdHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdHeading.swift; sourceTree = "<group>"; };
 		66CF50622953AE2E003C5B1B /* mdWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF50652953AE2E003C5B1B /* mdWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdWriterApp.swift; sourceTree = "<group>"; };
-		66CF50672953AE2E003C5B1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66CF50672953AE2E003C5B1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		66CF50692953AE2F003C5B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66CF506B2953AE2F003C5B1B /* mdWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mdWriter.entitlements; sourceTree = "<group>"; };
 		66CF506D2953AE2F003C5B1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66CF50742953B038003C5B1B /* MdFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFile.swift; sourceTree = "<group>"; };
+		66CF50762953B28C003C5B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CF50782953B59F003C5B1B /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Regular.ttf"; sourceTree = "<group>"; };
+		66CF50792953B59F003C5B1B /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6697C3A92954A685004915A4 /* CodeEditor in Frameworks */,
+				6698E3A4295475BE00EDF00E /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +60,7 @@
 		66CF50592953AE2E003C5B1B = {
 			isa = PBXGroup;
 			children = (
+				66CF50762953B28C003C5B1B /* Info.plist */,
 				66CF50642953AE2E003C5B1B /* mdWriter */,
 				66CF50632953AE2E003C5B1B /* Products */,
 			);
@@ -52,8 +77,17 @@
 		66CF50642953AE2E003C5B1B /* mdWriter */ = {
 			isa = PBXGroup;
 			children = (
+				6697C3AE2954CA03004915A4 /* Info.plist */,
+				66CF507C2953B5A9003C5B1B /* Fonts */,
 				66CF50652953AE2E003C5B1B /* mdWriterApp.swift */,
-				66CF50672953AE2E003C5B1B /* ContentView.swift */,
+				6697C3AA2954A994004915A4 /* SettingsView.swift */,
+				66CF50742953B038003C5B1B /* MdFile.swift */,
+				66CF50672953AE2E003C5B1B /* MainView.swift */,
+				6698E3A529547B7E00EDF00E /* OutlinerView.swift */,
+				6698E3A729547BFC00EDF00E /* MdHeading.swift */,
+				6698E39E29546DA800EDF00E /* EditorView.swift */,
+				6698E3A029546DB000EDF00E /* PreviewView.swift */,
+				6698E39C29546B9C00EDF00E /* EditorMode.swift */,
 				66CF50692953AE2F003C5B1B /* Assets.xcassets */,
 				66CF506B2953AE2F003C5B1B /* mdWriter.entitlements */,
 				66CF506C2953AE2F003C5B1B /* Preview Content */,
@@ -67,6 +101,15 @@
 				66CF506D2953AE2F003C5B1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66CF507C2953B5A9003C5B1B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				66CF50792953B59F003C5B1B /* FiraCode-Medium.ttf */,
+				66CF50782953B59F003C5B1B /* FiraCode-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +128,10 @@
 			dependencies = (
 			);
 			name = mdWriter;
+			packageProductDependencies = (
+				6698E3A3295475BE00EDF00E /* MarkdownUI */,
+				6697C3A82954A685004915A4 /* CodeEditor */,
+			);
 			productName = mdWriter;
 			productReference = 66CF50622953AE2E003C5B1B /* mdWriter.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +160,10 @@
 				Base,
 			);
 			mainGroup = 66CF50592953AE2E003C5B1B;
+			packageReferences = (
+				6698E3A2295475BE00EDF00E /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				6697C3A72954A685004915A4 /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			productRefGroup = 66CF50632953AE2E003C5B1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CF507A2953B59F003C5B1B /* FiraCode-Regular.ttf in Resources */,
+				66CF507B2953B59F003C5B1B /* FiraCode-Medium.ttf in Resources */,
 				66CF506E2953AE2F003C5B1B /* Preview Assets.xcassets in Resources */,
 				66CF506A2953AE2F003C5B1B /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CF50682953AE2E003C5B1B /* ContentView.swift in Sources */,
+				66CF50752953B038003C5B1B /* MdFile.swift in Sources */,
+				66CF50682953AE2E003C5B1B /* MainView.swift in Sources */,
 				66CF50662953AE2E003C5B1B /* mdWriterApp.swift in Sources */,
+				6697C3AB2954A994004915A4 /* SettingsView.swift in Sources */,
+				6698E3A829547BFC00EDF00E /* MdHeading.swift in Sources */,
+				6698E3A629547B7E00EDF00E /* OutlinerView.swift in Sources */,
+				6698E39D29546B9C00EDF00E /* EditorMode.swift in Sources */,
+				6698E39F29546DA800EDF00E /* EditorView.swift in Sources */,
+				6698E3A129546DB000EDF00E /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,27 +323,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = mdWriter/mdWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"mdWriter/Preview Content\"";
 				DEVELOPMENT_TEAM = Q7TAQU889U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mdWriter/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.finnswonderland.mdWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -301,27 +363,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = mdWriter/mdWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"mdWriter/Preview Content\"";
 				DEVELOPMENT_TEAM = Q7TAQU889U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mdWriter/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.finnswonderland.mdWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -354,6 +418,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6697C3A72954A685004915A4 /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		6698E3A2295475BE00EDF00E /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6697C3A82954A685004915A4 /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6697C3A72954A685004915A4 /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+		6698E3A3295475BE00EDF00E /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6698E3A2295475BE00EDF00E /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66CF505A2953AE2E003C5B1B /* Project object */;
 }
