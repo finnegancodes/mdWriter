@@ -2,19 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>FiraCode-Medium.ttf</string>
+        <string>FiraCode-Regular.ttf</string>
+    </array>
+    <key>UISupportsDocumentBrowser</key>
+    <true/>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconSystemGenerated</key>
+			<integer>1</integer>
 			<key>CFBundleTypeName</key>
-			<string>Markdown</string>
+			<string>Markdown Document</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>LSHandlerRank</key>
-			<string>Default</string>
+			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>eu.finnswonderland.md</string>
+				<string>eu.finnswonderland.mdWriter.md</string>
 			</array>
+			<key>NSDocumentClass</key>
+			<string>NSDocument</string>
 		</dict>
 	</array>
 	<key>UTExportedTypeDeclarations</key>
@@ -25,16 +36,17 @@
 				<string>public.plain-text</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Markdown</string>
+			<string>Markdown Document</string>
 			<key>UTTypeIcons</key>
 			<dict/>
 			<key>UTTypeIdentifier</key>
-			<string>eu.finnswonderland.md</string>
+			<string>eu.finnswonderland.mdWriter.md</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
 					<string>md</string>
+					<string>MD</string>
 				</array>
 			</dict>
 		</dict>
@@ -47,16 +59,17 @@
 				<string>public.plain-text</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Markdown</string>
+			<string>Markdown Document</string>
 			<key>UTTypeIcons</key>
 			<dict/>
 			<key>UTTypeIdentifier</key>
-			<string>eu.finnswonderland.md</string>
+			<string>eu.finnswonderland.mdWriter.md</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
 					<string>md</string>
+					<string>MD</string>
 				</array>
 			</dict>
 		</dict>

@@ -20,7 +20,11 @@ struct OutlinerView: View {
                         print("Line selected")
                         selectedLine = heading.line
                     } label: {
-                        Text(verbatim: heading.string)
+                        HStack(spacing: 4) {
+                            Text(heading.type.name)
+                                .foregroundColor(.secondary)
+                            Text(verbatim: heading.string)
+                        }
                     }
                     .buttonStyle(.plain)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -40,8 +44,29 @@ struct OutlinerView: View {
         var newHeadings: [MdHeading] = []
         for (index, line) in lines.enumerated() {
             if line.hasPrefix("#") {
-                let heading = line.trimmingCharacters(in: .whitespacesAndNewlines)
-                newHeadings.append(MdHeading(string: heading, line: index))
+                var prefixCount = 0
+                
+                for char in line {
+                    if char == "#" {
+                        prefixCount += 1
+                        continue
+                    }
+                    break
+                }
+                
+                if prefixCount > 6 {
+                    continue
+                }
+                
+                guard let headingType = MdHeadingType.init(rawValue: prefixCount) else {
+                    continue
+                }
+                
+                var heading = line.trimmingCharacters(in: .whitespacesAndNewlines)
+                heading.removeFirst(prefixCount)
+                heading.trimPrefix(" ")
+                
+                newHeadings.append(MdHeading(string: heading, line: index, type: headingType))
             }
         }
         return newHeadings

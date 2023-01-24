@@ -26,12 +26,15 @@
 
 /* Begin PBXFileReference section */
 		6697C3AA2954A994004915A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6697C3AE2954CA03004915A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6698E39C29546B9C00EDF00E /* EditorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMode.swift; sourceTree = "<group>"; };
 		6698E39E29546DA800EDF00E /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		6698E3A029546DB000EDF00E /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		6698E3A529547B7E00EDF00E /* OutlinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinerView.swift; sourceTree = "<group>"; };
 		6698E3A729547BFC00EDF00E /* MdHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdHeading.swift; sourceTree = "<group>"; };
+		66A349F0298033B20043EECB /* mdwriter-no-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mdwriter-no-toolbar.png"; sourceTree = "<group>"; };
+		66A349F1298033B20043EECB /* mdwriter-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mdwriter-preview.png"; sourceTree = "<group>"; };
+		66A349F2298033B20043EECB /* mdwriter-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mdwriter-edit.png"; sourceTree = "<group>"; };
+		66A349F3298033B30043EECB /* mdwriter-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mdwriter-settings.png"; sourceTree = "<group>"; };
 		66CF50622953AE2E003C5B1B /* mdWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF50652953AE2E003C5B1B /* mdWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdWriterApp.swift; sourceTree = "<group>"; };
 		66CF50672953AE2E003C5B1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -39,7 +42,7 @@
 		66CF506B2953AE2F003C5B1B /* mdWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mdWriter.entitlements; sourceTree = "<group>"; };
 		66CF506D2953AE2F003C5B1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66CF50742953B038003C5B1B /* MdFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdFile.swift; sourceTree = "<group>"; };
-		66CF50762953B28C003C5B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CF50762953B28C003C5B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = mdWriter/Info.plist; sourceTree = "<group>"; };
 		66CF50782953B59F003C5B1B /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Regular.ttf"; sourceTree = "<group>"; };
 		66CF50792953B59F003C5B1B /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,9 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66A349EF2980337D0043EECB /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				66A349F2298033B20043EECB /* mdwriter-edit.png */,
+				66A349F0298033B20043EECB /* mdwriter-no-toolbar.png */,
+				66A349F1298033B20043EECB /* mdwriter-preview.png */,
+				66A349F3298033B30043EECB /* mdwriter-settings.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		66CF50592953AE2E003C5B1B = {
 			isa = PBXGroup;
 			children = (
+				66A349EF2980337D0043EECB /* screenshots */,
 				66CF50762953B28C003C5B1B /* Info.plist */,
 				66CF50642953AE2E003C5B1B /* mdWriter */,
 				66CF50632953AE2E003C5B1B /* Products */,
@@ -77,7 +92,6 @@
 		66CF50642953AE2E003C5B1B /* mdWriter */ = {
 			isa = PBXGroup;
 			children = (
-				6697C3AE2954CA03004915A4 /* Info.plist */,
 				66CF507C2953B5A9003C5B1B /* Fonts */,
 				66CF50652953AE2E003C5B1B /* mdWriterApp.swift */,
 				6697C3AA2954A994004915A4 /* SettingsView.swift */,
@@ -323,15 +337,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = mdWriter/mdWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"mdWriter/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "mdWriter/Preview\\ Content";
 				DEVELOPMENT_TEAM = Q7TAQU889U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mdWriter/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MdWriter;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -347,7 +359,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.finnswonderland.mdWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -365,15 +377,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = mdWriter/mdWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"mdWriter/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "mdWriter/Preview\\ Content";
 				DEVELOPMENT_TEAM = Q7TAQU889U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mdWriter/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MdWriter;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -389,7 +399,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.finnswonderland.mdWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

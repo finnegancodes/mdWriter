@@ -16,6 +16,8 @@ struct mdWriterApp: App {
 #if !os(iOS)
         .defaultSize(width: 700, height: 500)
         .commands {
+            SidebarCommands()
+            ToolbarCommands()
             TextEditingCommands()
             TextFormattingCommands()
         }

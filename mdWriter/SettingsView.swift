@@ -14,14 +14,13 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
-            Section {
+            Section("General") {
                 Picker("Theme", selection: $editorTheme) {
                     ForEach(CodeEditor.availableThemes) { theme in
                         Text("\(theme.rawValue)")
                             .tag(theme.rawValue)
                     }
                 }
-                .frame(maxWidth: 200)
                 
                 Picker("Font size", selection: $fontSize) {
                     ForEach(11..<41) { i in
@@ -29,12 +28,17 @@ struct SettingsView: View {
                     }
                 }
                 .pickerStyle(.menu)
-                .frame(maxWidth: 150)
             }
-            Spacer()
+            Section("About") {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Created by [@finnegancodes](https://github.com/finnegancodes)")
+                    Text("Source code: [github.com/finnegancodes/mdWriter](https://github.com/finnegancodes/mdWriter)")
+                    Text("My website: [finnswonderland.eu](https://finnswonderland.eu)")
+                }
+            }
         }
-        .frame(width: 500, height: 300, alignment: .leading)
-        .padding(.all)
+        .formStyle(.grouped)
+        .frame(width: 400, height: 280, alignment: .leading)
         .navigationTitle("Settings")
     }
 }

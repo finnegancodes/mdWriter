@@ -11,7 +11,7 @@ import SwiftUI
 
 extension UTType {
     static var markdown: UTType {
-        UTType(importedAs: "eu.finnswonderland.md")
+        UTType(importedAs: "eu.finnswonderland.mdWriter.md")
     }
 }
 
